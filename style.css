@@ -121,6 +121,63 @@
      border-image: linear-gradient(to right, var(--red),  var(--blue),  var(--violet),  var(--orange)) 1;
     }
  }
+
+ @keyframes bordercolor3 {
+  0%, 100% {
+    border: 5px solid;
+    border-image: linear-gradient(to right, rgb(235, 206, 45), rgb(230, 205, 65), rgb(222, 203, 100), rgb(225, 216, 166)) 1;
+  }
+  25% {
+    border: 5px solid;
+    border-image: linear-gradient(to right, rgb(225, 216, 166), rgb(235, 206, 45), rgb(230, 205, 65), rgb(222, 203, 100)) 1;
+   }
+   50% {
+    border: 5px solid;
+    border-image: linear-gradient(to right, rgb(222, 203, 100),  rgb(225, 216, 166), rgb(235, 206, 45), rgb(230, 205, 65)) 1;
+   }
+   75% {
+    border: 5px solid;
+    border-image: linear-gradient(to right, rgb(230, 205, 65), rgb(222, 203, 100), rgb(225, 216, 166), rgb(235, 206, 45)) 1;
+   }
+}
+
+@keyframes bordercolor4 {
+  0%, 100% {
+    border: 5px solid;
+    border-image: linear-gradient(to right, rgb(112, 108, 108), rgb(255, 254, 252), rgb(174, 174, 170), rgb(228, 227, 223)) 1;
+  }
+  25% {
+    border: 5px solid;
+    border-image: linear-gradient(to right, rgb(228, 227, 223), rgb(112, 108, 108), rgb(255, 254, 252), rgb(174, 174, 170)) 1;
+   }
+   50% {
+    border: 5px solid;
+    border-image: linear-gradient(to right,  rgb(174, 174, 170), rgb(228, 227, 223), rgb(112, 108, 108), rgb(255, 254, 252)) 1;
+   }
+   75% {
+    border: 5px solid;
+    border-image: linear-gradient(to right,  rgb(255, 254, 252), rgb(174, 174, 170), rgb(228, 227, 223), rgb(112, 108, 108)) 1;
+   }
+}
+
+@keyframes bordercolor5 {
+  0%, 100% {
+    border: 5px solid;
+    border-image: linear-gradient(to right, #c0752b, rgb(204, 148, 65), rgb(231, 158, 63), rgb(210, 155, 97)) 1;
+  }
+  25% {
+    border: 5px solid;
+    border-image: linear-gradient(to right,rgb(210, 155, 97), #c0752b, rgb(204, 148, 65), rgb(231, 158, 63)) 1;
+   }
+   50% {
+    border: 5px solid;
+    border-image: linear-gradient(to right, rgb(231, 158, 63), rgb(210, 155, 97), #c0752b, rgb(204, 148, 65)) 1;
+   }
+   75% {
+    border: 5px solid;
+    border-image: linear-gradient(to right, rgb(204, 148, 65),rgb(231, 158, 63), rgb(210, 155, 97), #c0752b) 1;
+   }
+}
  
  /* width */
  ::-webkit-scrollbar {
@@ -129,17 +186,17 @@
   
   /* Track */
   ::-webkit-scrollbar-track {
-    background: #f1f1f1; 
+    background: #2c2222; 
   }
    
   /* Handle */
   ::-webkit-scrollbar-thumb {
-    background: #555; 
+    background: #565252; 
   }
   
   /* Handle on hover */
   ::-webkit-scrollbar-thumb:hover {
-    background: #383838; 
+    background: #dfdede; 
   }
  
  body{
@@ -246,7 +303,8 @@
 }
 
 .studentsP > img{
-   border: 2px solid #797070;
+   object-fit:cover;
+   border: 3px solid #857070;
    border-radius:100px;
    height: 8rem;
    width: 7.5rem;
@@ -263,6 +321,18 @@
 .studentsP > p{
   overflow-wrap: break-word;
   padding: 0.5rem;
+}
+
+#n2{
+  animation: bordercolor3 3s infinite linear;
+}
+
+#n3{
+  animation: bordercolor4 3s infinite linear;
+}
+
+#n4{
+  animation: bordercolor5 3s infinite linear;
 }
 
 @media (max-width: 1000px) {
